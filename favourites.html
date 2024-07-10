@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <a href="index.html" class="title">Crypto Tracker</a>
+      </div>
+      <div class="right-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="favourites.html" class="nav-link">Favorites</a>
+        <div class="search-container">
+          <span class="search-icon"></span>
+          <input type="text" id="search-box" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h1>Favorite Coins</h1>
+      <div class="shimmer-container" style="display: none">
+        <div class="shimmer"></div>
+      </div>
+      <table id="favourite-table">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Price</th>
+            <th>24th Volume</th>
+            <th>Market Cap</th>
+          </tr>
+        </thead>
+        <tbody id="favourite-table-body">
+            <!-- Dynamically updating by js -->
+        </tbody>
+      </table>
+      <p id="no-favorites" style="display: none">There are no liked coins</p>
+    </main>
+
+    <script src="favourite.js"></script>
+    <script
+      src="https://kit.fontawesome.com/812469f4ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

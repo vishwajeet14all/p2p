@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <a href="index.html" class="title">Crypto Tracker</a>
+      </div>
+      <div class="right-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="favourites.html" class="nav-link">Favorites</a>
+        <div class="search-container">
+          <span class="search-icon"></span>
+          <input type="text" id="search-box" placeholder="Search" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <table id="crypto-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>
+              <i class="fa-solid fa-arrow-up" id="price-inc"></i
+              ><i class="fa-solid fa-arrow-down" id="price-dec"></i>Price
+            </th>
+            <th id="volume">Volume</th>
+            <th>Market Cap</th>
+            <th>Favorites</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-table-body"></tbody>
+      </table>
+    </main>
+
+    <div id="pagination-container">
+      <div class="shimmer-container">
+        <div class="shimmer"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/812469f4ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
